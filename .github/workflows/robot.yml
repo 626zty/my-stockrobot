@@ -23,7 +23,7 @@ jobs:
     - name: 3. 安裝需要的工具包 (函式庫)
       run: |
         python -m pip install --upgrade pip
-        pip install pandas requests yfinance FinMind
+        pip install pandas requests yfinance FinMind tqdm "urllib3<2"
 
     - name: 4. 執行股票機器人！
       run: python adr_check.py
